@@ -1,0 +1,38 @@
+{
+  "name": "grunt-clear",
+  "description": "Clears your command line",
+  "version": "0.1.0",
+  "homepage": "https://github.com/geddesign/clear-cli",
+  "author": {
+    "name": "Dave Geddes",
+    "email": "davidcgeddes@gmail.com",
+    "url": "geddesign.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geddesign/clear-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geddesign/clear-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/geddesign/clear-cli/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "bin": "bin/grunt-clear",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0a"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
