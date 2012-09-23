@@ -9,9 +9,19 @@
 
 module.exports = function(grunt) {
   grunt.registerTask('clear', 'Clear your terminal window', function() {
-    var child = require('child_process');
-    var ps = child.spawn('clear');
-    ps.stdout.pipe(process.stdout);
-    ps.stdin.end();
+    var done = this.async();
+    var spawnOptions = {
+      cmd: 'ls'
+    };
+
+    function doneFunction(error, result, code) {
+      grunt.log.writeln('doneFunction called');
+      var child = require('child_process');
+      var ps = child.spawn('clear');
+      ps.stdout.pipe(process.stdout);
+      ps.stdin.end();
+      done();
+    }
+    grunt.util.spawn(spawnOptions, doneFunction);
   });
 };
