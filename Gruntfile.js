@@ -25,6 +25,8 @@ module.exports = function(grunt) {
       },
     },
     watch: {
+      //clear terminal on any watch task. beauty.
+      tasks: ['clear'],
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile']
@@ -48,6 +50,8 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
 
   // Default task.
-  grunt.registerTask('default', ['clear', 'jshint', 'nodeunit']);
+  // grunt.registerTask('default', ['clear', 'jshint', 'nodeunit']);
+  grunt.registerTask('default', ['clear', 'nodeunit', 'jshint']);
+  grunt.registerTask('testit', ['before', 'clear', 'after']);
 
 };

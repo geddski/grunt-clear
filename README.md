@@ -23,6 +23,14 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ## Release History
 _(Nothing yet)_
 
+## Todo 
+Write a basic unit test
+Make it work on windows
+Make it work on linux
+Do screencast
+Finish readme
+publish
+
 ## License
 Copyright (c) 2012 Dave Geddes  
 Licensed under the MIT license.
