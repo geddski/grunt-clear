@@ -1,7 +1,7 @@
 {
   "name": "grunt-clear",
   "description": "Clears your command line",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/geddesign/grunt-clear",
   "author": {
     "name": "Dave Geddes",
