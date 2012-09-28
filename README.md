@@ -34,7 +34,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Todo 
 Write tests
-Make sure it works on windows
 Make sure it works on linux
 Do screencast
 
