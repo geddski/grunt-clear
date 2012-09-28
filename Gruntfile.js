@@ -25,8 +25,11 @@ module.exports = function(grunt) {
       },
     },
     watch: {
+      clear: {
+        files: ['<%= jshint.lib.src %>', '<%= jshint.test.src %>'],
+        tasks: ['clear']
+      },
       //clear terminal on any watch task. beauty.
-      tasks: ['clear'],
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile']

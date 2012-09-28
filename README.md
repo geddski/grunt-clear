@@ -15,22 +15,23 @@ grunt.loadNpmTasks('grunt-clear');
 
 ## Documentation
 Turn your console output into a live dashboard by clearing it before displaying new results. 
-Add this task to your "watch" task:
+Add this task as the **first item** of your `watch` task:
 
 ```javascript
 watch: {
-  //clear terminal on any watch task. beauty.
-  tasks: ['clear'],
-  jshint: {...},
-  ...etc
+  clear: {
+    //clear terminal on any watch task. beauty.
+    tasks: ['clear'],
+    jshint: {...},
+    ...etc
+  }
 }
 ```
 
+The `watch` task will run things in order, so make sure `clear` is very first otherwise your console will clear the output of other tasks you are probably interested in. 
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
-
-## Release History
-_(Nothing yet)_
 
 ## Todo 
 Write tests
