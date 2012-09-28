@@ -9,6 +9,17 @@
 
 module.exports = function(grunt) {
   grunt.registerTask('clear', 'Clear your terminal window', function() {
-    process.stdout.write('\x1Bc');
+    if(process.platform === "win32"){
+      process.stdout.write('\x1Bc');
+    }
+    //clear with no flicker on unix
+    else{
+      var done = this.async();
+      var child = require('child_process');
+      var ps = child.spawn('clear');
+      ps.stdout.pipe(process.stdout);
+      ps.on('exit', done);
+      ps.stdin.end();
+    }
   });
 };
