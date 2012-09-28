@@ -21,9 +21,8 @@ Add this task as the **first item** of your `watch` task:
 watch: {
   clear: {
     //clear terminal on any watch task. beauty.
-    tasks: ['clear'],
-    jshint: {...},
-    ...etc
+    files: ['**/*'], //or be more specific
+    tasks: ['clear']
   }
 }
 ```
