@@ -1,6 +1,6 @@
 /*
  * grunt-clear
- * https://github.com/geddesign/grunt-clear
+ * https://github.com/geddski/grunt-clear
  *
  * Copyright (c) 2012 Dave Geddes
  * Licensed under the MIT license.

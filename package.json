@@ -2,23 +2,23 @@
   "name": "grunt-clear",
   "description": "Clears your command line",
   "version": "0.2.0",
-  "homepage": "https://github.com/geddesign/grunt-clear",
+  "homepage": "https://github.com/geddski/grunt-clear",
   "author": {
     "name": "Dave Geddes",
-    "email": "davidcgeddes@gmail.com",
-    "url": "geddesign.com"
+    "email": "heygeddski@gmail.com",
+    "url": "geddski.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/geddesign/grunt-clear.git"
+    "url": "git://github.com/geddski/grunt-clear.git"
   },
   "bugs": {
-    "url": "https://github.com/geddesign/grunt-clear/issues"
+    "url": "https://github.com/geddski/grunt-clear/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/geddesign/grunt-clear/blob/master/LICENSE-MIT"
+      "url": "https://github.com/geddski/grunt-clear/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -32,7 +32,8 @@
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-nodeunit": "~0.1.2"
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-release": "~0.3.1"
   },
   "peerDependencies": {
     "grunt": "~0.4.0"
